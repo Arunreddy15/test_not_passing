@@ -16,8 +16,8 @@ class BlogList extends Component {
 
   getBlogData = async () => {
     const apiUrl = 'https://apis.ccbp.in/blogs'
-    const options = {method: 'GET'}
-    const response = await fetch(apiUrl, options)
+
+    const response = await fetch(apiUrl)
     const data = await response.json()
     const fetchedData = data.map(each => ({
       id: each.id,
