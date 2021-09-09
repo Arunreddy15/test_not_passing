@@ -1,0 +1,49 @@
+/* Write your CSS code here */
+.blog-item-link {
+  text-decoration: none;
+}
+.image-topic {
+  height: 200px;
+  max-width: 400px;
+  width: 35%;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+.image-author {
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.item-container {
+  display: flex;
+
+  border: 1px solid;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 772px) {
+  .item-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .image-topic {
+    width: 100%;
+
+    min-height: 200px;
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+}
+
+.author-tab {
+  display: flex;
+  align-items: center;
+}
+h1 {
+  font-size: 24px;
+  color: black;
+}
+p {
+  color: black;
+}
